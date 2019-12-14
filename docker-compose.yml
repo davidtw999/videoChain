@@ -1,0 +1,5 @@
+version: '3'
+services:
+  game:
+    image: davidtw999/videogame
+    build: .

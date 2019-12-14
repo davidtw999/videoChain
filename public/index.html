@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8";/>
+		<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+		<title>playerpage</title>
+	</head>
+	<body>
+		<div class="header">
+				
+			<div class="menu">
+		
+				<a><div id= "title">
+                	Please use <span style="color:#00FF00;font-size:30px";>GOOGLE CHROME </span> to play the game
+					
+				</div></a>
+			
+			</div>
+		</div>
+
+		<div id="text11">
+			<div class="text-contain text-header">
+				<a><span><div id="leftID">Select the game by clicking the button </div><span></a>
+			</div>
+			<div class="buttonSec1">
+					<button id="singleChainButton">
+							Single chain game	
+						</button>
+				<div class="imgSec">
+						
+						<img src="/img/singlechain.png" style="width:60%;height:30%;">
+				</div>
+				
+			
+			</div>
+			
+			<div class="buttonSec">
+					<button id="twoChainsButton">
+							Two chains game
+						</button>
+					<div class="imgSec">
+							
+							<img src="/img/2chainsCompetition.png" style="width:55%;height:10%;margin-top:5%">
+						</div>
+				
+				
+			</div>
+
+			<div class="buttonSec">
+					<button id="shuffleButton">
+							Random room game
+						</button>
+					<div class="imgSec">
+							
+							<img src="/img/shuffle.png" style="width:45%;height:15%;margin-top:15%">
+						</div>
+				
+				
+			</div>
+		
+		</div>
+
+		<div id="text22">
+			<div class="text-contain text-header">
+				<a><span><div id="rightID"> Game progress for all types of games </div><span></a>
+			</div>
+
+			<div class="buttonSec1">
+				<div>
+					Game <var id = sglCGready>is not full</var><br>
+					Maxmium players in the chain: <var id = sglCGmaxPlayers>5</var> <br>
+					Number of players in the chain: <br>
+					Number of playable positions in the chain: <br>
+				</div>
+			</div>
+
+			<div class="buttonSec">
+					Game <br>
+					Maxmium players in the top chain: <br>
+					Number of players in the top chain: <br>
+					Number of playable positions in the top chain: <br>
+					Maxmium players in the bottom chain: <br>
+					Number of players in the bottom chain: <br>
+					Number of playable positions in the bottom chain: <br>
+			</div>
+
+			<div class="buttonSec">
+					Game <br>
+					Maxmium players in the room: <br>
+					Number of players in the room: <br>
+			</div>
+		
+		</div>
+
+
+		<div class="bottom">
+			<div id=bottomPanel>
+				<!-- <button id="selectionButton">
+					test
+				</button> -->
+			</div>	
+	
+		</div>
+
+
+		<script type="text/javascript">
+			document.getElementById("singleChainButton").onclick = function () {
+				console.log("click")
+				window.location.href = "prototype1.html";
+			};
+
+			document.getElementById("twoChainsButton").onclick = function () {
+				console.log("click")
+				window.location.href = "";
+			};
+
+			document.getElementById("shuffleButton").onclick = function () {
+				console.log("click")
+				window.location.href = "";
+			};
+
+		</script>
+
+
+	</body>
+
+</html>

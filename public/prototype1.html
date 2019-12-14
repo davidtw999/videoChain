@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8";/>
+		<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+		<title>prototype1</title>
+	</head>
+	<body>
+		<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script> -->
+		<!-- <script type="text/javascript" src="/socket.io-client/dist/socket.io.js"></script> -->
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="lib.js"></script>
+		
+
+		<div class="header">
+				
+			<div class="menu">
+				<svg id = "chaincircle" width="200" height="30">
+				</svg>
+
+				<!-- <svg id = "clickButton" width="100" height="30">
+				</svg> -->
+					
+		
+				<a><div id= "selfID">Waiting
+					
+				</div></a>
+			
+			</div>
+		</div>
+
+		<!-- <div class="header-bottom">	
+		</div> -->
+		
+
+		<div id="text11">
+			<div class="text-contain text-header">
+				<a><span><div id="leftID">SCREEN1</div><span></a>
+			</div>
+			<iframe id="leftscreen" src="https://www.gstatic.com/webp/gallery3/2.png"  
+			frameborder="0" scrolling="auto" class="frame-area" allow="microphone; camera" > </iframe> 
+			
+		</div>
+
+		<div id="text22">
+			<div class="text-contain text-header">
+				<a><span><div id="rightID">SCREEN2</div><span></a>
+			</div>
+			<iframe id="rightscreen" src="https://www.gstatic.com/webp/gallery3/2.png" 
+			frameborder="0" scrolling="auto" class="frame-area" allow="microphone; camera" > </iframe> 
+			
+		</div>
+
+		<div class="bottom">
+			<div id=bottomPanel>
+				<button id="button" disabled>
+					Waiting for all players in chain
+				</button>
+			</div>
+			<p id="clock"></p>
+			<button id="submit">
+			</button>
+			
+	
+		</div>
+
+		<script type="text/javascript">
+			var ip = '';
+			var port = 5000;
+			// var port = 443;
+			var socket = new Socket(ip, port);
+			console.log(socket);
+			// console.log(socket.link);
+			// console.log(socket.link.right);
+			console.log("fjklsjlclick Before")
+
+
+			// document.addEventListener('click',  () => {
+			// 	var colorRBut = "red"
+			// 	// socket.clickReadyBut(colorRBut);
+			// 	console.log(event.target);
+			// 	var ready = document.getElementById('button')
+			// 	ready.style.backgroundColor = colorRBut
+			// });
+
+		</script>
+
+		
+	</body>
+
+</html>
